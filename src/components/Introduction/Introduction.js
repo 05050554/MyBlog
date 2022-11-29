@@ -15,8 +15,7 @@ const ContainerMod = () => {
   const { positionGridCenter } = useContext(PositionContext);
   const { fontSizeK, fontStyle } = useContext(FontSizeContext);
   const muiBox = (Describe, bold, italic) => {
-    {
-    }
+   
     return bold ? (
       <Box sx={{ pb: 2 }} style={{ fontWeight: fontStyle.bold }}>
         {Describe}
