@@ -15,7 +15,7 @@ export const IntroIconBtn = () => {
   return (
     <Stack direction="row" spacing={1}>
       <IconButton
-        aria-label="delete"
+        aria-label="github"
         onClick={() => openNewPage("https://github.com/05050554", "Github")}
         
       >
@@ -26,6 +26,7 @@ export const IntroIconBtn = () => {
         />
       </IconButton>
       <IconButton
+      aria-label="linkedin"
         onClick={() =>
           openNewPage(
             "https://www.linkedin.com/in/shiue-wei-tzou-44b369242/",

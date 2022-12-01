@@ -69,7 +69,7 @@ const ThemeButton = () => {
   const { toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <MaterialUISwitch onChange={toggleTheme} />
+      <MaterialUISwitch onChange={toggleTheme} aria-label="Switch"/>
     </>
   );
 };

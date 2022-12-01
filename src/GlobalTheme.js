@@ -5,13 +5,16 @@ const themesColor = {
     foreground: "#000000",
     background: "#f6fac5",
     containBack: "#efefef",
-    paperColor:"white"
+    paperColor:"white",
+    mui:"primary"
   },
   dark: {
     foreground: "#ffffff",
     background: "#415a77",
     containBack: "#6d8eb5",
-    paperColor:"#013069"
+    paperColor:"#013069",
+    mui:"secondary"
+
   },
 };
 

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Introduction from "./components/Introduction/Introduction";
 import { ThemeContext } from "./GlobalTheme";
-import About from "./components/About/About";
-
+// import About from "./components/About/About";
+import NavTabs from "./components/NavTabs";
 function App() {
   const { theme } = useContext(ThemeContext);
   return (
@@ -23,7 +23,8 @@ function App() {
           backgroundColor: theme.containBack,
         }}
       >
-        <About />
+        <NavTabs/>
+        {/* <About /> */}
       </div>
     </>
   );
