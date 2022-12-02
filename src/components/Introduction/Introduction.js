@@ -11,11 +11,11 @@ import {
 } from "../../GlobalTheme";
 import MaterialUISwitch from "../MuiCustomize";
 import { IntroIconBtn } from "./IntroIconBtn";
+
 const ContainerMod = () => {
   const { positionGridCenter } = useContext(PositionContext);
   const { fontSizeK, fontStyle } = useContext(FontSizeContext);
   const muiBox = (Describe, bold, italic) => {
-   
     return bold ? (
       <Box sx={{ pb: 2 }} style={{ fontWeight: fontStyle.bold }}>
         {Describe}
@@ -69,7 +69,7 @@ const ThemeButton = () => {
   const { toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <MaterialUISwitch onChange={toggleTheme} aria-label="Switch"/>
+      <MaterialUISwitch onChange={toggleTheme} aria-label="Switch" />
     </>
   );
 };

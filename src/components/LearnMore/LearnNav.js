@@ -1,46 +1,60 @@
 import React, { useContext } from "react";
 import Box from "@mui/material/Box";
-import { FontSizeContext, ThemeContext } from "../../GlobalTheme";
+import {
+  FontSizeContext,
+  ThemeContext,
+  PositionContext,
+} from "../../GlobalTheme";
+import styled from "styled-components";
+
+const LearnNavA = styled.a`
+  padding: 3%;
+  color: ${(props) => props.theme.foreground};
+  text-decoration: none;
+`;
 
 const LearnNav = () => {
   const { fontSizeK } = useContext(FontSizeContext);
+  const { positionFlexCenter } = useContext(PositionContext);
   const { theme } = useContext(ThemeContext);
 
   return (
     <Box
-      sx={{ p: 2, border: "1px dashed grey", width: "60%" }}
+      sx={{ border: "1px dashed grey", minWidth: "60%" }}
       style={{
-        fontSize: fontSizeK.fontH2,
+        fontSize: fontSizeK.fontH3,
+        display: positionFlexCenter.display,
+        justifyContent: positionFlexCenter.jc,
+        alignItems: positionFlexCenter.ai,
+        flexWrap: positionFlexCenter.wrap,
       }}
     >
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+      <LearnNavA href="/" theme={theme}>
         {" "}
         #React
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+      </LearnNavA>
+      <LearnNavA href="/" theme={theme}>
         {" "}
         #CSS
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+      </LearnNavA>
+      <LearnNavA href="/" theme={theme}>
         {" "}
-        #JavaScript
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+        #JS
+      </LearnNavA>
+      <LearnNavA href="/" theme={theme}>
         {" "}
-        #Github
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
-        {" "}
-        #Github
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+        #Git
+      </LearnNavA>
+      <LearnNavA href="/" theme={theme}>
         {" "}
         #HTML
-      </a>
-      <a href="/" style={{ padding: "3%", color: theme.foreground }}>
+      </LearnNavA>
+      <LearnNavA href="/" theme={theme}>
         {" "}
-        #Abbreviation
-      </a>
+        #Abbr.
+      </LearnNavA>
+
+
     </Box>
   );
 };

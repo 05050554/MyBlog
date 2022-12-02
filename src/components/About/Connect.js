@@ -4,6 +4,15 @@ import { FontSizeContext, ThemeContext } from "../../GlobalTheme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+
+const LinkA = styled.a`
+  color: ${(props) => props.theme.foreground};
+  text-decoration: none;
+`;
+
+const ConnectSpan = styled.span``;
+
 const Connect = () => {
   const { fontSizeK } = useContext(FontSizeContext);
   const { theme } = useContext(ThemeContext);
@@ -17,26 +26,23 @@ const Connect = () => {
       有興趣聯絡我的，歡迎使用下列幾項方式:
       <br />
       <FontAwesomeIcon icon={faLinkedin} />
-      <a
+      <LinkA
         href="https://www.linkedin.com/in/shiue-wei-tzou-44b369242/"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ color: theme.foreground, textDecoration: "none" }}
+        theme={theme}
       >
         {" "}
         LinkedIn
-      </a>
-      <span> : 如果本人持續有再找工作的話LinkedIn都會看。</span>
+      </LinkA>
+      <ConnectSpan> : 如果本人持續有再找工作的話LinkedIn都會看。</ConnectSpan>
       <br />
       <FontAwesomeIcon icon={faEnvelope} />
-      <a
-        href="mailto: jason5366831@gmail.com"
-        style={{ color: theme.foreground, textDecoration: "none" }}
-      >
+      <LinkA href="mailto: jason5366831@gmail.com" theme={theme}>
         {" "}
         Email
-      </a>
-      <span> : 可寄信至 jason5366831@gmail.com 這個信箱。</span>
+      </LinkA>
+      <ConnectSpan> : 可寄信至 jason5366831@gmail.com 這個信箱。</ConnectSpan>
     </Box>
   );
 };

@@ -30,6 +30,7 @@ const themesPosition = {
     ai: "center",
     font: "30px",
     padding: "5rem",
+    wrap:"wrap",
   },
   gridCenter: {
     display: "grid",

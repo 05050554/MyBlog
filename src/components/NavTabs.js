@@ -6,10 +6,11 @@ import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
 import About from "./About/About";
 import { PositionContext, ThemeContext } from "../GlobalTheme";
+import ReactList from "./LearnReact/ReactList";
 import LearnNav from "./LearnMore/LearnNav";
 const NavTabs = () => {
   const { theme } = useContext(ThemeContext);
-  const { positionFlexCenter } = useContext(PositionContext);
+  const { positionGridCenter } = useContext(PositionContext);
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -37,23 +38,18 @@ const NavTabs = () => {
               value="1"
             />
             <Tab style={{ color: theme.foreground }} label="關於我" value="2" />
-            <Tab
-              style={{ color: theme.foreground }}
-              label="Item Three"
-              value="3"
-            />
+            <Tab style={{ color: theme.foreground }} label="專案" value="3" />
           </TabList>
         </Box>
         <TabPanel
           style={{
-            display: positionFlexCenter.display,
-            justifyContent: positionFlexCenter.jc,
-            alignItems: positionFlexCenter.ai,
-            
+            display: positionGridCenter.display,
+            justifyItems: positionGridCenter.ji,
           }}
           value="1"
         >
           <LearnNav />
+          <ReactList />
         </TabPanel>
         <TabPanel value="2">
           <About />
