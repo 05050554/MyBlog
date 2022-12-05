@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import Box from "@mui/material/Box";
 import { FontSizeContext } from "../../GlobalTheme";
-
+import { TextBox } from "../MuiCustomize";
 const AboutIntroduction = () => {
   const { fontSizeK } = useContext(FontSizeContext);
 
   return (
-    <Box
+    <TextBox
       style={{
         fontSize: fontSizeK.fontH4,
       }}
@@ -26,7 +25,7 @@ const AboutIntroduction = () => {
       每次到實驗室都會跟同學互相分享學習到的新技術，
       也會開小專案來練習，從專案中去釐清自己不太了解的部分，
       希望能在未來的工作中不斷地增進自己的經驗與技術。
-    </Box>
+    </TextBox>
   );
 };
 
