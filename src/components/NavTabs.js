@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, lazy, Suspense } from "react";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
@@ -6,8 +6,16 @@ import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
 import About from "./About/About";
 import { PositionContext, ThemeContext } from "../GlobalTheme";
-import ReactList from "./LearnReact/ReactList";
-import LearnNav from "./LearnMore/LearnNav";
+import { LoadingPage } from "./LoadingPage";
+
+const ReactList = lazy(() => import("./LearnReact/ReactList"));
+const OtherList = lazy(() => import("./LearnOther/OtherList"));
+const GitList = lazy(() => import("./LearnGit/GitList"));
+const LearnNav = lazy(() => import("./LearnMore/LearnNav"));
+const JSList = lazy(() => import("./LearnJS/JSList"));
+const CssList = lazy(() => import("./LearnCss/CssList"));
+const HTMLList = lazy(() => import("./LearnHTML/HTMLList"));
+const AbbrList = lazy(() => import("./LearnAbbr/AbbrList"));
 const NavTabs = () => {
   const { theme } = useContext(ThemeContext);
   const { positionGridCenter } = useContext(PositionContext);
@@ -48,8 +56,16 @@ const NavTabs = () => {
           }}
           value="1"
         >
-          <LearnNav />
-          <ReactList />
+          <Suspense fallback={<LoadingPage/>}>
+            <LearnNav />
+            <ReactList />
+            <GitList/>
+            <OtherList/>
+            <JSList/>
+            <CssList/>
+            <HTMLList/>
+            <AbbrList/>
+          </Suspense>
         </TabPanel>
         <TabPanel value="2">
           <About />

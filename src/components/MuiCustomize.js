@@ -2,6 +2,7 @@ import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 import Box from "@mui/material/Box";
+import { Image } from "antd";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -77,3 +78,9 @@ export const TextBox = styled(Box)({
   paddingTop: "3%",
 
 });
+
+
+export const ImgaeMod = styled(Image)`
+  width:"100%",
+  height:"100%",
+`;

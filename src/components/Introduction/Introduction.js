@@ -10,7 +10,7 @@ import {
   FontSizeContext,
 } from "../../GlobalTheme";
 import MaterialUISwitch from "../MuiCustomize";
-import { IntroIconBtn } from "./IntroIconBtn";
+import { IntroIconBtn,IntroIconMoreBtn } from "./IntroIconBtn";
 
 const ContainerMod = () => {
   const { positionGridCenter } = useContext(PositionContext);
@@ -73,3 +73,56 @@ const ThemeButton = () => {
     </>
   );
 };
+
+
+
+export const TagIntroduction = () => {
+  const { positionGridCenter } = useContext(PositionContext);
+  const { fontSizeK, fontStyle } = useContext(FontSizeContext);
+  const muiBox = (Describe, bold, italic) => {
+    return bold ? (
+      <Box sx={{ pb: 2 }} style={{ fontWeight: fontStyle.bold }}>
+        {Describe}
+      </Box>
+    ) : italic ? (
+      <Box sx={{ pb: 2 }} style={{ fontStyle: fontStyle.italic }}>
+        {Describe}
+      </Box>
+    ) : (
+      <Box
+        sx={{ pb: 2 }}
+        style={{ fontWeight: fontStyle.bold, fontStyle: fontStyle.italic }}
+      >
+        {Describe}
+      </Box>
+    );
+  };
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <Container
+        style={{
+          fontSize: fontSizeK.fontH3,
+          display: positionGridCenter.display,
+          justifyItems: positionGridCenter.ji,
+          padding: "3%",
+        }}
+      >
+        
+
+        <Box sx={{ pb: 2 }}>
+          <Avatar sx={{ bgcolor: deepOrange[500] }}>Wei</Avatar>
+        </Box>
+        {muiBox("Software Engineer / Frontend Engineer", 0, "italic")}
+       
+
+        <Box sx={{ pb: 2 }}>
+          <IntroIconMoreBtn />
+        </Box>
+
+        <ThemeButton />
+      </Container>
+    </React.Fragment>
+  )
+}
+

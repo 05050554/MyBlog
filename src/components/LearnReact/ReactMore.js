@@ -1,7 +1,13 @@
 import React, { useContext } from "react";
 import { FontSizeContext, ThemeContext } from "../../GlobalTheme";
-import { ContainBox, TitleBox, ItemPaper, TextBox } from "../MuiCustomize";
-
+import {
+  ContainBox,
+  TitleBox,
+  ItemPaper,
+  TextBox,
+  ImgaeMod,
+} from "../MuiCustomize";
+import Divider from '@mui/material/Divider';
 import LifeCycle from "../Img/LifeCycle.png";
 import LifeEffect from "../Img/useEffect.png";
 import LifeEffect2 from "../Img/useEffect2.png";
@@ -22,6 +28,7 @@ export const Virtual = () => {
         }}
       >
         <TitleBox> 【筆記】 Virtual DOM</TitleBox>
+        <Divider/>
         <TextBox
           style={{
             fontSize: fontSizeK.fontH4,
@@ -51,6 +58,7 @@ export const JSX = () => {
         }}
       >
         <TitleBox> 【筆記】 JSX</TitleBox>
+        <Divider/>
         <TextBox
           style={{
             fontSize: fontSizeK.fontH4,
@@ -60,19 +68,11 @@ export const JSX = () => {
           Sugar)使用的話有助於精簡程式碼
           <br /> JSX:
           <br />
-          <img
-            style={{ width: "30%", height: "10%" }}
-            src={JSXPic}
-            alt="JSXPic"
-          />
+          <ImgaeMod src={JSXPic} alt="JSXPic" />
           <br />
           JS: <br />
           <span>
-            <img
-              style={{ width: "40%", height: "10%" }}
-              src={JSPic}
-              alt="JSPic"
-            />
+            <ImgaeMod src={JSPic} alt="JSPic" />
           </span>
           <br />
           JSX寫法: HTML 的 class 屬性在 JSX 須寫為 className (class 為 JSX
@@ -98,17 +98,14 @@ export const ComponentLifeCycle = () => {
         }}
       >
         <TitleBox> 【筆記】 Component Lifecycle</TitleBox>
+        <Divider/>
         <TextBox
           style={{
             fontSize: fontSizeK.fontH4,
           }}
         >
           <ContainBox>
-            <img
-              style={{ width: "80%", height: "60%" }}
-              src={LifeCycle}
-              alt="LifeCycle"
-            />
+            <ImgaeMod src={LifeCycle} alt="LifeCycle" />
           </ContainBox>
           <br />
           (灰色地方 無法控制地帶 瀏覽器生命週期 )<br /> Mounting: 元件初始化{" "}
@@ -156,21 +153,13 @@ export const ComponentLifeCycle = () => {
           re-render 的。
           <p style={{ fontWeight: fontStyle.bold }}>useEffect:</p>
           <ContainBox>
-            <img
-              style={{ width: "80%", height: "60%" }}
-              src={LifeEffect}
-              alt="LifeUseEffect"
-            />
+            <ImgaeMod src={LifeEffect} alt="LifeUseEffect" />
           </ContainBox>
           這個 effect 只會觸發一次 componentDidMount 只要在 useEffect
           中的第一個參數放在 return statement
           裡的函數將會是元件準備要卸載時會觸發的行為。
           <ContainBox>
-            <img
-              style={{ width: "80%", height: "60%" }}
-              src={LifeEffect2}
-              alt="LifeUseEffect2"
-            />
+            <ImgaeMod src={LifeEffect2} alt="LifeUseEffect2" />
           </ContainBox>
           第二個陣列參數中放值代表當該值改變後會再次觸發 useEffect，相當於
           componentDidUpdate

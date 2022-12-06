@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { FontSizeContext, ThemeContext } from "../../GlobalTheme";
-import { ContainBox, TitleBox, ItemPaper, TextBox } from "../MuiCustomize";
+import { ContainBox, TitleBox, ItemPaper, TextBox,ImgaeMod } from "../MuiCustomize";
 import useCallbackPic from "../Img/useCallbackPic.png";
+import Divider from '@mui/material/Divider';
 
 export const UseCallbackCom = () => {
   const { fontSizeK } = useContext(FontSizeContext);
@@ -17,6 +18,7 @@ export const UseCallbackCom = () => {
         }}
       >
         <TitleBox> 【筆記】 useCallback</TitleBox>
+        <Divider/>
         <TextBox
           style={{
             fontSize: fontSizeK.fontH4,
@@ -35,7 +37,7 @@ export const UseCallbackCom = () => {
           語法:
           <br />
           <ContainBox>
-            <img
+            <ImgaeMod
               style={{ width: "100%", height: "60%" }}
               src={useCallbackPic}
               alt="useCallbackPic"
