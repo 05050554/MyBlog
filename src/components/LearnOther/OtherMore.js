@@ -8,8 +8,8 @@ import {
   ImgaeMod,
 } from "../MuiCustomize";
 import Divider from "@mui/material/Divider";
-import ForwardProxy from "../Img/ForwardProxy.png";
-import ReverseProxy from "../Img/ReverseProxy.png";
+import ForwardProxy from "../Img/ForwardProxy.webp";
+import ReverseProxy from "../Img/ReverseProxy.webp";
 export const OtherMore = () => {
   const { fontSizeK } = useContext(FontSizeContext);
   const { theme } = useContext(ThemeContext);

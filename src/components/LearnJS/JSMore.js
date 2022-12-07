@@ -8,9 +8,9 @@ import {
   ImgaeMod,
 } from "../MuiCustomize";
 import Divider from "@mui/material/Divider";
-import ArrowFunc from "../Img/ArrowFunc.png";
-import TL from "../Img/TL.png";
-import mod from "../Img/mod.png";
+import ArrowFunc from "../Img/ArrowFunc.webp";
+import TL from "../Img/TL.webp";
+import mod from "../Img/mod.webp";
 export const JSHistory = () => {
   const { fontSizeK } = useContext(FontSizeContext);
   const { theme } = useContext(ThemeContext);

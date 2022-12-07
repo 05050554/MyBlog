@@ -7,8 +7,8 @@ import {
   TextBox,
   ImgaeMod,
 } from "../MuiCustomize";
-import GitFlowPic from "../Img/GitFlow.png";
-import GitPP from "../Img/GitPP.png";
+import GitFlowPic from "../Img/GitFlow.webp";
+import GitPP from "../Img/GitPP.webp";
 import Divider from "@mui/material/Divider";
 
 export const GitMommand = () => {

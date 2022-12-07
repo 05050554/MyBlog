@@ -8,11 +8,11 @@ import {
   ImgaeMod,
 } from "../MuiCustomize";
 import Divider from '@mui/material/Divider';
-import LifeCycle from "../Img/LifeCycle.png";
-import LifeEffect from "../Img/useEffect.png";
-import LifeEffect2 from "../Img/useEffect2.png";
-import JSXPic from "../Img/jsx.png";
-import JSPic from "../Img/js.png";
+import LifeCycle from "../Img/LifeCycle.webp";
+import LifeEffect from "../Img/useEffect.webp";
+import LifeEffect2 from "../Img/useEffect2.webp";
+import JSXPic from "../Img/jsx.webp";
+import JSPic from "../Img/js.webp";
 
 export const Virtual = () => {
   const { fontSizeK } = useContext(FontSizeContext);

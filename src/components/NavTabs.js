@@ -16,6 +16,7 @@ const JSList = lazy(() => import("./LearnJS/JSList"));
 const CssList = lazy(() => import("./LearnCss/CssList"));
 const HTMLList = lazy(() => import("./LearnHTML/HTMLList"));
 const AbbrList = lazy(() => import("./LearnAbbr/AbbrList"));
+const ProjectList = lazy(() => import("./Project/ProjectList"));
 const NavTabs = () => {
   const { theme } = useContext(ThemeContext);
   const { positionGridCenter } = useContext(PositionContext);
@@ -70,7 +71,7 @@ const NavTabs = () => {
         <TabPanel value="2">
           <About />
         </TabPanel>
-        <TabPanel value="3">專案</TabPanel>
+        <TabPanel value="3"><ProjectList/></TabPanel>
       </TabContext>
     </Box>
   );

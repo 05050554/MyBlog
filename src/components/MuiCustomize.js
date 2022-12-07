@@ -62,6 +62,13 @@ export const ContainBox = styled(Box)({
   minWidth:"100%"
 });
 
+export const ContainMiddleBox = styled(Box)({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+
+});
+
 export const ItemPaper = styled(Paper)({
   width: "80%",
   padding: "3%",

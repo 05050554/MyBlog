@@ -8,9 +8,9 @@ import {
   ImgaeMod,
 } from "../MuiCustomize";
 import Divider from "@mui/material/Divider";
-import HTMLAsync from "../Img/HTMLAsync.png";
-import HTMLDefer from "../Img/HTMLDefer.png";
-import HTMLCompare from "../Img/HTMLCompare.png";
+import HTMLAsync from "../Img/HTMLAsync.webp";
+import HTMLDefer from "../Img/HTMLDefer.webp";
+import HTMLCompare from "../Img/HTMLCompare.webp";
 
 export const HTMLLife = () => {
   const { fontSizeK } = useContext(FontSizeContext);
