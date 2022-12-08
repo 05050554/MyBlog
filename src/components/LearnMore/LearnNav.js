@@ -29,6 +29,10 @@ const LearnNav = () => {
         flexWrap: positionFlexCenter.wrap,
       }}
     >
+      <LearnNavA href="/" theme={theme}>
+        {" "}
+        #Home
+      </LearnNavA>
       <LearnNavA href="/react" theme={theme}>
         {" "}
         #React

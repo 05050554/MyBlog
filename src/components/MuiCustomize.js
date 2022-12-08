@@ -91,3 +91,12 @@ export const ImgaeMod = styled(Image)`
   width:"100%",
   height:"100%",
 `;
+
+
+export const LearnMoreBox = styled(Box)({
+  width: "90%",
+  display: "flex",
+  justifyContent: "flex-end",
+  alignItems: "center",
+
+});

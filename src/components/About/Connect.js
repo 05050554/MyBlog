@@ -6,9 +6,10 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-const LinkA = styled.a`
+export const LinkA = styled.a`
   color: ${(props) => props.theme.foreground};
   text-decoration: none;
+
 `;
 
 const ConnectSpan = styled.span``;
