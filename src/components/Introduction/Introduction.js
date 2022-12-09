@@ -45,7 +45,7 @@ const ContainerMod = () => {
           padding: "3%",
         }}
       >
-        {muiBox("Hello, This Is My FrontEnd Blog!", "bold", 0)}
+        {muiBox("Hello, This Is SHIUE-WEI TZOU's FrontEnd Blog!", "bold", 0)}
 
         <Box sx={{ pb: 2 }}>
           <Avatar sx={{ bgcolor: deepOrange[500] }}>Wei</Avatar>

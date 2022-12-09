@@ -10,7 +10,7 @@ const AboutIntroduction = () => {
         fontSize: fontSizeK.fontH4,
       }}
     >
-      我是Wei，雲林科技大學資訊工程碩士班畢業，
+      我是SHIUE-WEI TZOU，雲林科技大學資訊工程碩士班畢業，
       研究部分主要是做高光譜影像處理，
       是利用高光譜的特性去進行瑕疵檢測，
       是利用 Python 搭配深度學習，
