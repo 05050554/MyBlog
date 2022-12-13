@@ -1,9 +1,10 @@
 import React from 'react'
-import { OtherMore } from './OtherMore'
+import { OtherProxy,Docker } from './OtherMore'
 const OtherList = () => {
   return (
     <>
-    <OtherMore/>
+    <OtherProxy/>
+    <Docker/>
     </>
   )
 }

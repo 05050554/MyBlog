@@ -79,11 +79,24 @@ export const ItemPaper = styled(Paper)({
 export const TitleBox = styled(Box)({
   paddingTop: "3%",
   fontWeight: "bold",
+  fontSize:"32px",
+});
+
+export const SubTitleBox = styled(Box)({
+  paddingTop: "3%",
+  fontWeight: "bold",
+  fontSize:"26px",
+});
+
+export const ThirdTitleBox = styled(Box)({
+  paddingTop: "3%",
+  fontWeight: "bold",
+  fontSize:"22px",
 });
 
 export const TextBox = styled(Box)({
-  paddingTop: "3%",
-
+  paddingTop: "1%",
+  fontSize:"20px",
 });
 
 
