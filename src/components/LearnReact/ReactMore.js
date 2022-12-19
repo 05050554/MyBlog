@@ -26,7 +26,7 @@ export const Virtual = () => {
           backgroundColor: theme.paperColor,
         }}
       >
-        <TitleBox> 【筆記】 React hook 與 Redux 的差別</TitleBox>
+        <TitleBox> 【筆記】 Virtual DOM</TitleBox>
         <Divider />
         <TextBox>
           文件物件模型（Document Object Model, DOM） React 做了一個 Virtual

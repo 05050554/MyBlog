@@ -1,7 +1,7 @@
 import React from "react";
 import { Virtual, JSX, ComponentLifeCycle} from "./ReactMore";
 import { UseCallbackCom,LearnRedux ,HookVSRedux } from "./ReactMore2";
-import { ReactRouter } from "./ReactMore3";
+import { ReactRouter,ReaVsNex,FunVsCla } from "./ReactMore3";
 
 const ReactList = () => {
   return (
@@ -13,6 +13,8 @@ const ReactList = () => {
       <LearnRedux/>
       <HookVSRedux/>
       <ReactRouter/>
+      <ReaVsNex/>
+      <FunVsCla/>
     </>
   );
 };

@@ -53,7 +53,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default MaterialUISwitch;
 
-//原生styled理才+引號 mui的components不用 但要import進來
+//原生styled裡才+引號 mui的components不用 但要import進來
 export const ContainBox = styled(Box)({
   display: "flex",
   justifyContent: "center",
@@ -112,4 +112,8 @@ export const LearnMoreBox = styled(Box)({
   justifyContent: "flex-end",
   alignItems: "center",
 
+});
+
+export const OneLineText = styled("p")({
+  fontSize:"20px",
 });

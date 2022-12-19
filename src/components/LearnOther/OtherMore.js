@@ -12,6 +12,7 @@ import {
 import Divider from "@mui/material/Divider";
 import ForwardProxy from "../Img/ForwardProxy.webp";
 import ReverseProxy from "../Img/ReverseProxy.webp";
+import MVC from "../Img/MVC.webp";
 export const OtherProxy = () => {
   const { fontSizeK } = useContext(FontSizeContext);
   const { theme } = useContext(ThemeContext);
@@ -107,3 +108,25 @@ export const Docker = () => {
     </ContainBox>
   );
 };
+
+export const OtherMVC = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <ContainBox>
+      <ItemPaper
+        elevation={24}
+        style={{
+          color: theme.foreground,
+          backgroundColor: theme.paperColor,
+        }}
+      >
+        <TitleBox> 【筆記】 MVC架構</TitleBox>
+        <Divider />
+        <ThirdTitleBox>分成 Model、View、Controller</ThirdTitleBox>
+        <ContainBox>
+            <ImgaeMod src={MVC} alt="MVC" />
+          </ContainBox>
+      </ItemPaper>
+    </ContainBox>
+  )
+}

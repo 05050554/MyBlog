@@ -1,9 +1,10 @@
 import React from "react";
-import { JSHistory } from "./JSMore";
+import { JSHistory,JSEventLoop } from "./JSMore";
 const JSList = () => {
   return (
     <>
       <JSHistory />
+      <JSEventLoop/>
     </>
   );
 };
