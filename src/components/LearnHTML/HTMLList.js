@@ -1,10 +1,11 @@
 import React from 'react'
-import { HTMLLife } from './HTMLMore'
+import { HTMLLife,HTMLSe } from './HTMLMore'
 
 const HTMLList = () => {
   return (
     <>
     <HTMLLife/>
+    <HTMLSe/>
     </>
   )
 }

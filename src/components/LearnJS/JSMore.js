@@ -163,7 +163,10 @@ export const JSEventLoop = () => {
           <ImgaeMod src={EventLoop2} alt="EventLoop2" />
         </ContainBox>
         <ThirdTitleBox>Event loop onClick :</ThirdTitleBox>
-        <a href="https://www.youtube.com/watch?v=TLwMAvqLT2M&ab_channel=PJCHENder">https://www.youtube.com/watch?v=TLwMAvqLT2M&ab_channel=PJCHENder</a>
+
+        <a href="https://www.youtube.com/watch?v=TLwMAvqLT2M&ab_channel=PJCHENder">
+          https://www.youtube.com/watch?v=TLwMAvqLT2M&ab_channel=PJCHENder
+        </a>
       </ItemPaper>
     </ContainBox>
   );

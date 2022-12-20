@@ -6,6 +6,8 @@ import {
   ItemPaper,
   TextBox,
   ImgaeMod,
+  OneLineText,
+  ThirdTitleBox,
 } from "../MuiCustomize";
 import Divider from "@mui/material/Divider";
 import HTMLAsync from "../Img/HTMLAsync.webp";
@@ -68,3 +70,29 @@ export const HTMLLife = () => {
     </ContainBox>
   );
 };
+
+export const HTMLSe = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <ContainBox>
+      <ItemPaper
+        elevation={24}
+        style={{
+          color: theme.foreground,
+          backgroundColor: theme.paperColor,
+        }}
+      >
+        <TitleBox> 【筆記】 Semantic elements</TitleBox>
+        <Divider />
+        <ThirdTitleBox>語意標籤(Semantic Elements) = elements with a meaning. </ThirdTitleBox>
+        <OneLineText> nav ： 用於網頁的導覽列。 </OneLineText>
+        <OneLineText>header ： 一個區塊的標題。</OneLineText>
+        <OneLineText>article : 具有獨立性的區塊，內容與擺放位置無關。</OneLineText>
+        <OneLineText>section : 與上下文相關的區塊，常見於章節(chapters)。</OneLineText>
+        <OneLineText>aside : 與周圍無關的區塊，其內容不影響主文。</OneLineText>
+        <OneLineText>footer : 一個區塊的底部，適合擺放最近的區塊相關資訊。</OneLineText>
+        <OneLineText>figure/figcaption：放置與某些句子相關的圖片，並給予編號與標題</OneLineText>
+      </ItemPaper>
+    </ContainBox>
+  )
+}

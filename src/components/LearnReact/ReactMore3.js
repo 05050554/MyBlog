@@ -203,8 +203,6 @@ export const ReaVsNex = () => {
   );
 };
 
-
-
 export const FunVsCla = () => {
   const { theme } = useContext(ThemeContext);
   return (
@@ -220,34 +218,108 @@ export const FunVsCla = () => {
         <Divider />
         <ThirdTitleBox>Class Component</ThirdTitleBox>
         <OneLineText>● 需繼承React.Component</OneLineText>
-        <OneLineText>● 具有生命週期，可以針對某些情境決定是否渲染，ex shouldComponentUpdate()</OneLineText>
+        <OneLineText>
+          ● 具有生命週期，可以針對某些情境決定是否渲染，ex
+          shouldComponentUpdate()
+        </OneLineText>
         <OneLineText>● 具有state (Stateful component)</OneLineText>
         <OneLineText>● 需要實作render方法</OneLineText>
         <OneLineText>● 擁有this</OneLineText>
-        <OneLineText>● 每次都可以拿到最新的this.props，因為this隨時都在變化</OneLineText>
+        <OneLineText>
+          ● 每次都可以拿到最新的this.props，因為this隨時都在變化
+        </OneLineText>
         <ThirdTitleBox>Functional Component</ThirdTitleBox>
-        <OneLineText>● 沒有生命週期 （React Hook useEffect 出現後，就有生命週期了！）</OneLineText>
-        <OneLineText>● 沒有state（Stateless），所以被稱為無狀態組件（但React Hook useState出現後就可以有state了！）</OneLineText>
+        <OneLineText>
+          ● 沒有生命週期 （React Hook useEffect 出現後，就有生命週期了！）
+        </OneLineText>
+        <OneLineText>
+          ● 沒有state（Stateless），所以被稱為無狀態組件（但React Hook
+          useState出現後就可以有state了！）
+        </OneLineText>
         <OneLineText>● 可以用arrow function 宣告或是一般的function</OneLineText>
         <OneLineText>● 沒有this</OneLineText>
         <OneLineText>● 編譯更快（因為不用將class轉換成es5</OneLineText>
-        <OneLineText>● props會一直是原本傳進來的那個，而不會跟著更新，閉包的概念</OneLineText>
+        <OneLineText>
+          ● props會一直是原本傳進來的那個，而不會跟著更新，閉包的概念
+        </OneLineText>
         <ContainBox>
-            <ImgaeMod
-              style={{ width: "100%", height: "60%" }}
-              src={FunVsClaPic}
-              alt="FunVsClaPic"
-            />
-          </ContainBox>
+          <ImgaeMod
+            style={{ width: "100%", height: "60%" }}
+            src={FunVsClaPic}
+            alt="FunVsClaPic"
+          />
+        </ContainBox>
         <ThirdTitleBox>寫法比較:</ThirdTitleBox>
         <ContainBox>
-            <ImgaeMod
-              style={{ width: "100%", height: "60%" }}
-              src={FunVsClaWr}
-              alt="FunVsClaWr"
-            />
-          </ContainBox>
+          <ImgaeMod
+            style={{ width: "100%", height: "60%" }}
+            src={FunVsClaWr}
+            alt="FunVsClaWr"
+          />
+        </ContainBox>
       </ItemPaper>
     </ContainBox>
-  )
-}
+  );
+};
+
+export const ReactXWMD = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <ContainBox>
+      <ItemPaper
+        elevation={24}
+        style={{
+          color: theme.foreground,
+          backgroundColor: theme.paperColor,
+        }}
+      >
+        <TitleBox>
+          {" "}
+          【筆記】 x-www-form-urlencoded vs multipart/form-data
+        </TitleBox>
+        <Divider />
+        <TextBox>
+          1.
+          x-www-form-urlencoded更普遍地用於將文本數據發送到服務器，而multipart/form-data用於發送二進制數據，尤其是用於將文件上傳到服務器
+        </TextBox>
+        <TextBox>
+          2. 如果你想發送簡單的文本/ASCII
+          數據，那麼x-www-form-urlencoded就可以了
+        </TextBox>
+      </ItemPaper>
+    </ContainBox>
+  );
+};
+
+export const ReactCros = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <ContainBox>
+      <ItemPaper
+        elevation={24}
+        style={{
+          color: theme.foreground,
+          backgroundColor: theme.paperColor,
+        }}
+      >
+        <TitleBox> 【筆記】 cros問題:</TitleBox>
+        <Divider />
+        <OneLineText>1. ［EASY CORS］擴充</OneLineText>
+        <OneLineText>2. chrome 關閉cros</OneLineText>
+        <OneLineText>3. 前後端分離的架構</OneLineText>
+        <TextBox>
+          假設你的網站服務，前後端是在不同的domain之下，那麼比較合理的方式是從伺服器那邊調整HTTP
+          Header設定，設定能夠接受的來源、方法及資訊{" "}
+        </TextBox>
+        <OneLineText>4. 串接第三方API</OneLineText>
+        <TextBox>
+          {" "}
+          也就是這次我遇到的情況，在串接FRED
+          API時，發現FRED是阻擋跨來源請求的，而我不可能去請FRED修改他們的伺服器的設定，基於CORS是瀏覽器的限制，那麼解決方法就是不要透過瀏覽器發出請求，而是透過一個代理伺服器發送請求，那麼這個請求就不會被擋。
+         
+        </TextBox>
+        <OneLineText> 用proxy server</OneLineText>
+      </ItemPaper>
+    </ContainBox>
+  );
+};

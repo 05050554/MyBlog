@@ -1,11 +1,13 @@
 import React from 'react'
-import { OtherProxy,Docker,OtherMVC } from './OtherMore'
+import { OtherProxy,Docker,OtherMVC,OtherWebpack,OtherSpeedUp } from './OtherMore'
 const OtherList = () => {
   return (
     <>
     <OtherProxy/>
     <Docker/>
     <OtherMVC/>
+    <OtherWebpack/>
+    <OtherSpeedUp/>
     </>
   )
 }
